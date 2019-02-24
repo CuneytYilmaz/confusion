@@ -3,9 +3,12 @@ import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
 
 class DishDetail extends Component {
 
-    constructor (props){
-        super(props);
+    componentDidMount(){
+        console.log('DishDetail Component componentDidMount invoked');
+    }
 
+    componentDidUpdate(){
+        console.log('DishDetail Component componentDidMount invoked');
     }
 
     renderDish(dish){
@@ -34,7 +37,7 @@ class DishDetail extends Component {
                     <div>
                         <li key={comment.id}>
                             <p>{comment.comment}</p>
-                            <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
+                            <p>-- {comment.author} , {new Intl.DateTimeFormat('en-EN', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
                         </li>
                     </div>
                 );

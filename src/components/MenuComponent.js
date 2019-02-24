@@ -5,7 +5,6 @@ class Menu extends Component {
 
     constructor (props){
         super(props);
-
     }
 
     componentDidMount(){
