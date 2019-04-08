@@ -6,7 +6,6 @@ import 'bootstrap-social/bootstrap-social.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-// test
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
